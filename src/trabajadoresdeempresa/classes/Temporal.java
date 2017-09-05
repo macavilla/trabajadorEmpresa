@@ -10,14 +10,14 @@ package trabajadoresdeempresa.classes;
  * @author AULA1
  */
 public class Temporal extends Empleado {
+
     private float montoQuincena;
-    
-    
+
     @Override
     public float totalDelMes() {
         float sueldo;
-        sueldo = montoQuincena *2;
+        sueldo = montoQuincena * 2;
         return sueldo;
     }
-    
+
 }

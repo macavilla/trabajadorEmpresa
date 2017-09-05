@@ -10,6 +10,5 @@ package trabajadoresdeempresa.interfaces;
  * @author AULA1
  */
 public interface Cobrador {
-    public float totalDelMes();
-    
-}
+
+}// fin  Cobrador

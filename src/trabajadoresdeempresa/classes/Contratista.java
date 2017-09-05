@@ -12,14 +12,19 @@ import trabajadoresdeempresa.interfaces.Cobrador;
  * @author AULA1
  */
 public class Contratista implements Cobrador {
-    private String cuit;
-    
-    @Override
+
+    private String cuil;
+
     public float totalDelMes() {
+
         return 0;
-        
-        
     }
 
+    public String getCuil() {
+        return cuil;
+    }
 
+    public void setCuil(String cuil) {
+        this.cuil = cuil;
+    }
 }//fin de clase

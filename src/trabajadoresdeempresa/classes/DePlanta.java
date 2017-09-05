@@ -9,20 +9,32 @@ package trabajadoresdeempresa.classes;
  *
  * @author AULA1
  */
-public class DePlanta extends Empleado{
-    
+public class DePlanta extends Empleado {
+
     private float horasExtra;
     private Categoria categoria;
-    
-    
+
     @Override
     public float totalDelMes() {
-        float sueldo;
-        
-        
-        
-        return sueldo;
-        
+
+        return categoria.totalMes(horasExtra);
+
     }
-    
+
+    public float getHorasExtra() {
+        return horasExtra;
+    }
+
+    public void setHorasExtra(float horasExtra) {
+        this.horasExtra = horasExtra;
+    }
+
+    public Categoria getCategoria() {
+        return categoria;
+    }
+
+    public void setCategoria(Categoria categoria) {
+        this.categoria = categoria;
+    }
+
 }

@@ -9,10 +9,12 @@ package trabajadoresdeempresa.classes;
  *
  * @author AULA1
  */
-public class Categoria {
+public class Categoria extends Empleado {
+
     private String descripcion;
     private float sueldoBasico;
     private float montoHorasExtras;
+    private float horasExtra;
 
     public String getDescripcion() {
         return descripcion;
@@ -38,10 +40,16 @@ public class Categoria {
         this.montoHorasExtras = montoHorasExtras;
     }
 
-    
+    public float totalMes(float horas) {
+        return sueldoBasico + horas * montoHorasExtras;
+    }
 
-  
-    
-    
-    
+    public float totalDelMes() {
+        float sueldoSegunCategoria;
+
+        sueldoSegunCategoria = sueldoBasico + montoHorasExtras * horasExtra;
+        return sueldoSegunCategoria;
+
+    }
+
 }
